@@ -1,0 +1,10 @@
+<h1>Caja Reguistradora</h1>
+<div class="container">
+  <div class="izquierda">
+  <app-lista-productos titulo="Comida " [productos]="arrComida" (productoSelecionado)="onProductoSelecionado($event)"></app-lista-productos>
+  <app-lista-productos titulo="Bebida" [productos]="arrBebida" (productoSelecionado)="onProductoSelecionado($event)"></app-lista-productos>
+  </div>
+  <div class="derecha">
+    <app-comanda [arrProductos]="productosSeleccionados" ></app-comanda>
+  </div>
+</div>

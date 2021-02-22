@@ -1,0 +1,15 @@
+<p *ngFor="let todoModel of tareas">
+  {{todoModel.titulo}}
+
+</p>
+
+<div class="lista" >
+  <div class="tarea" *ngFor="let todoModel of tareas; let indice = index;" 
+  [ngClass]="{completa: todoModel.completa,  incompleta: !todoModel.completa} ">
+
+    <h3>  {{todoModel.titulo}} </h3>  
+    <p> {{todoModel.descripcion}}</p>
+    <button (click)="onClick(todoModel)" > {{todoModel.completa ? 'INCOMPLETA' : 'COMPLETA'}} </button>
+    <button (click)="onClickBorrar(indice)">Borrar</button>
+  </div>
+</div>

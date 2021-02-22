@@ -1,0 +1,8 @@
+.sumar{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: chartreuse;
+    border: 1px solid black;
+}

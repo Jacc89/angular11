@@ -1,0 +1,18 @@
+<p [ngStyle]="propiedadParrafo">
+  ngstyle works! <br>
+  
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex expedita error tenetur at soluta quod excepturi. Doloremque soluta harum eius? Blanditiis quam magnam ipsum similique maiores laudantium perspiciatis dolore. Quisquam.
+</p>
+
+<div>
+  <button (click)="cambiarColor('r')">red</button>
+  <button (click)="cambiarColor('a')">amarillo</button>
+  <button (click)="cambiarColor('v')">verde</button>
+</div>
+
+<div>
+  <input type="text" [(ngModel)]="propiedadParrafo.color">
+</div>
+<div>
+  <input type="range" min="15" max="200" step="2" (change)="onChanges($event)">
+</div>

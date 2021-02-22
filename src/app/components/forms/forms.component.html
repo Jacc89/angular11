@@ -1,0 +1,11 @@
+<div>
+  <label for="">Titulo</label>
+  <input type="text" [(ngModel)]="nuevaTarea.titulo">
+</div>
+<div>
+  <label for="">Descripcion</label>
+  <input type="text"  [(ngModel)]="nuevaTarea.descripcion">
+</div>
+<button (click)="onClick()">Enviar</button>
+<br>
+{{ nuevaTarea | json}}

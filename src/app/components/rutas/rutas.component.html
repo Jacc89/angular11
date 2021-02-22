@@ -1,0 +1,14 @@
+<p>
+  rutas works!
+</p>
+<h1>Cabecera de la paguinas</h1>
+<div class="rutas">
+  <a [routerLink]="['/about']" routerLinkActive="activa">sobre</a>
+  <a [routerLink]="['/informacion']" routerLinkActive="activa">info</a>
+  <a [routerLink]="['/contacto']" routerLinkActive="activa">contact</a>
+</div>
+<div class="botones">
+  <button (click)="onClick('about')">about</button>
+  <button (click)="onClick('informacion')">informacion</button>
+  <button (click)="onClick('contacto')">contacto</button>
+</div>

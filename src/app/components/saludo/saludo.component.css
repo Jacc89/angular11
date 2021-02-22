@@ -1,0 +1,9 @@
+.nav{
+    text-align: center;
+    align-items: flex-start;
+}
+.nav img{
+    align-content: left;
+    background: rgb(165, 21, 21);
+    width:100px;
+}

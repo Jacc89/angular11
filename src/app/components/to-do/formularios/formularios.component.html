@@ -1,0 +1,13 @@
+<div class="formulario">
+  <div class="form-grup">
+    <label for="">Titlulo</label>
+    <input type="text" [(ngModel)]="nuevatarea.titulo" >
+  </div>
+  <div class="form-grup">
+    <label for="">Descripcion</label>
+    <input type="text" [(ngModel)]="nuevatarea.descripcion" >
+  </div>
+  <button (click)="onClick()">Enviar</button>
+</div>
+
+{{nuevatarea |json }}

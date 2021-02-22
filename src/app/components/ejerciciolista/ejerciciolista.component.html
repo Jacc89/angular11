@@ -1,0 +1,15 @@
+<h1>Lista de compra</h1>
+<div class="container">
+  <div class="row">    
+    <app-formas (productoCreado)="onProductoCreado($event)"></app-formas>  
+  </div>
+  <div class="row listas">    
+    <div class="izquierda">
+      <app-listaformas [productos]="productosSelecionados" (productoSeleccionado)="onProductoSelecionado($event)" textBoton="Comprar" ></app-listaformas>
+    </div>
+    <div class="derecha">
+      <app-listaformas  [productos]="productosComprados" (productoSeleccionado)="onNoProductoSelecionado($event)" textBoton="Quitar"></app-listaformas>
+    </div>
+  </div>
+  
+</div>
